@@ -1,0 +1,29 @@
+version: '3'
+
+services:
+  ruby:
+    build: .
+    volumes:
+      - .:/rails-api-template:cached
+      - /rails-api-template/node_modules
+    env_file:
+      - .env
+    ports:
+      - '13000:3000'
+    restart: 'no'
+    links:
+      - postgres
+    command: bundle exec rails s -b 0.0.0.0
+  postgres:
+    image: postgres:11.9-alpine
+    volumes:
+      - db:/var/lib/postgresql/data
+    env_file:
+      - .env
+    ports:
+      - '15432:5432'
+    restart: 'no'
+
+volumes:
+  db:
+    driver: local
