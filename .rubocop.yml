@@ -11,3 +11,6 @@ AllCops:
     - '**/tmp/**/*'
     - '**/vendor/**/*'
     - '**/node_modules/**/*'
+
+Style/Documentation:
+  Enabled: false

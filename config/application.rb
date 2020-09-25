@@ -35,5 +35,12 @@ module RailsApiTemplate
     # Middleware like session, flash, cookies can be added back manually.
     # Skip views, helpers and assets when generating a new resource.
     config.api_only = true
+
+    # time zone configuration
+    config.time_zone = 'Asia/Tokyo' # for japan
+    config.active_record.default_timezone = 'UTC'
+
+    # active model serializer
+    ActiveModelSerializers.config.key_transform = :underscore
   end
 end
