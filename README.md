@@ -1,5 +1,7 @@
 # rails-api-template
 
+[![Test](https://github.com/t2h5/rails-api-template/actions/workflows/test.yml/badge.svg)](https://github.com/t2h5/rails-api-template/actions/workflows/test.yml)
+
 ## tech stack
 
 - ruby: 2.7.4
