@@ -39,8 +39,5 @@ module RailsApiTemplate
     # time zone configuration
     config.time_zone = 'Asia/Tokyo' # for japan
     config.active_record.default_timezone = 'UTC'
-
-    # active model serializer
-    ActiveModelSerializers.config.key_transform = :underscore
   end
 end

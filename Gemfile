@@ -3,12 +3,12 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-gem 'bootsnap', require: false
-gem 'pg'
-gem 'puma', '~> 5.3'
 gem 'rails', '~> 6.1'
 
-gem 'active_model_serializers', '~> 0.10.0'
+gem 'bootsnap', require: false
+gem 'jb'
+gem 'pg'
+gem 'puma', '~> 5.3'
 gem 'rack-cors'
 
 group :development, :test do
